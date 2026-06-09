@@ -1,0 +1,12 @@
+{
+  "id": "notepad",
+  "name": "Notepad",
+  "icon": "📝",
+  "entry": "apps/notepad/app.js",
+  "styles": "apps/notepad/app.css",
+  "defaultSize": { "width": 550, "height": 400 },
+  "minSize": { "width": 350, "height": 250 },
+  "singleton": false,
+  "pinned": false,
+  "desktopShortcut": true
+}

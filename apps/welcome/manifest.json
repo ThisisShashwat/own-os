@@ -1,0 +1,12 @@
+{
+  "id": "welcome",
+  "name": "Welcome",
+  "icon": "👋",
+  "entry": "apps/welcome/app.js",
+  "styles": "apps/welcome/app.css",
+  "defaultSize": { "width": 500, "height": 380 },
+  "minSize": { "width": 300, "height": 200 },
+  "singleton": true,
+  "pinned": true,
+  "desktopShortcut": true
+}

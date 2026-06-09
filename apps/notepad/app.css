@@ -1,0 +1,67 @@
+/* apps/notepad/app.css */
+
+.notepad-app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: var(--font-ui);
+  color: var(--color-text-primary);
+  background-color: var(--color-surface-1);
+}
+
+/* Menu Bar styling */
+.notepad-menu {
+  display: flex;
+  background-color: var(--color-surface-2);
+  border-bottom: 1px solid var(--border-color-subtle);
+  padding: 4px 8px;
+  gap: 12px;
+}
+
+.notepad-menu-item {
+  font-size: 11px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color var(--duration-short) var(--ease-fluent);
+}
+
+.notepad-menu-item:hover {
+  background-color: hsla(0, 0%, 100%, 0.08);
+}
+
+.notepad-menu-item:active {
+  background-color: hsla(0, 0%, 100%, 0.04);
+}
+
+/* Editor Workspace */
+.notepad-editor-wrapper {
+  flex: 1;
+  display: flex;
+}
+
+.notepad-textarea {
+  flex: 1;
+  border: none;
+  background-color: var(--color-surface-1);
+  color: var(--color-text-primary);
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 13px;
+  padding: 12px;
+  resize: none;
+  outline: none;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+/* Status Bar */
+.notepad-statusbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-surface-2);
+  border-top: 1px solid var(--border-color-subtle);
+  padding: 4px 12px;
+  font-size: 10px;
+  color: var(--color-text-secondary);
+}

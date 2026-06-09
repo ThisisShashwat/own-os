@@ -1,0 +1,89 @@
+/* styles/tokens.css */
+
+:root {
+  /* Font Family - Windows 11 standard fallback list */
+  --font-ui: "Segoe UI Variable Text", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+
+  /* Color Palette - HSL values for premium, cohesive thematic scaling */
+  /* Base Theme: Dark Mode by default, matching Windows 11 Fluent design */
+  --color-surface-0: hsl(220, 15%, 8%);      /* Desktop background base (if no wallpaper) */
+  --color-surface-1: hsl(220, 15%, 12%);     /* Window bodies, large container backgrounds */
+  --color-surface-2: hsl(220, 15%, 16%);     /* Titlebars, Start Menu pane, context menu background */
+  --color-surface-3: hsl(220, 12%, 24%);     /* Buttons, interactive fields, raised components */
+  --color-surface-3-hover: hsl(220, 12%, 30%);
+  --color-surface-3-active: hsl(220, 12%, 18%);
+
+  /* Accent Color (Windows 11 Fluent Blue) */
+  --color-accent: hsl(210, 100%, 56%);        /* #1d8bf8 */
+  --color-accent-hover: hsl(210, 100%, 64%);  /* #49a3f9 */
+  --color-accent-active: hsl(210, 100%, 48%); /* #0673dc */
+  --color-accent-disabled: hsl(210, 20%, 30%);
+
+  /* Typography Colors */
+  --color-text-primary: hsl(0, 0%, 95%);
+  --color-text-secondary: hsl(220, 10%, 70%);
+  --color-text-disabled: hsl(220, 10%, 45%);
+  --color-text-accent: hsl(0, 0%, 100%);
+
+  /* Acrylic and Mica transparent layer effects */
+  --acrylic-bg: hsla(220, 15%, 16%, 0.65);
+  --acrylic-blur: blur(20px) saturate(180%);
+  --acrylic-border: 1px solid hsla(0, 0%, 100%, 0.08);
+
+  /* Geometry & Corner Radii */
+  --radius-window: 12px;
+  --radius-button: 8px;
+  --radius-input: 4px;
+  --radius-tooltip: 4px;
+
+  /* Shadows (Large Soft Box Shadows) */
+  --shadow-window: 0 8px 32px rgba(0, 0, 0, 0.35), 0 0 1px rgba(255, 255, 255, 0.1);
+  --shadow-flyout: 0 8px 24px rgba(0, 0, 0, 0.25), 0 0 1px rgba(255, 255, 255, 0.1);
+  --shadow-tooltip: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  /* Standardized Shell Border */
+  --border-color-subtle: hsla(0, 0%, 100%, 0.08);
+  --border-color-strong: hsla(0, 0%, 100%, 0.15);
+
+  /* Z-Index Hierarchy scale */
+  --z-desktop: 0;
+  --z-windows: 100;
+  --z-taskbar: 1000;
+  --z-overlay: 2000;
+  --z-notifications: 3000;
+
+  /* Animation Timings and fluent Easing curves */
+  --ease-fluent: cubic-bezier(0.1, 0.9, 0.2, 1);
+  --duration-short: 150ms;
+  --duration-medium: 300ms;
+}
+
+/* Global Fluent Dark-Mode Scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-surface-3) var(--color-surface-1);
+}
+
+/* WebKit-based browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface-1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-3);
+  border-radius: 4px;
+  border: 1px solid var(--color-surface-1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-surface-3-hover);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--color-accent);
+}

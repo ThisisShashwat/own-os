@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebOS - Windows 11 Fluent Shell</title>
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/shell.css">
+  <link rel="stylesheet" href="styles/window.css">
+  <link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+
+  <!-- Desktop Layer (Wallpapers, Desktop Icons, Right-click Lasso Selection) -->
+  <div id="os-desktop"></div>
+  
+  <!-- Window layer (Container for active application windows) -->
+  <div id="os-window-layer"></div>
+  
+  <!-- Taskbar Layer (Bottom panel, Start button, Pinned/Active Apps, Clock/Tray) -->
+  <div id="os-taskbar"></div>
+  
+  <!-- Overlay Layer (Start Menu panel, Toast notifications, floating Context Menus) -->
+  <div id="os-overlay-layer"></div>
+
+  <!-- JavaScript Modules -->
+  <!-- Core Kernel (Event Bus & Registry) must load first -->
+  <script src="kernel.js"></script>
+  
+  <!-- Core Shell Modules -->
+  <script src="core/desktop.js"></script>
+  <script src="core/window-manager.js"></script>
+  <script src="core/taskbar.js"></script>
+  <script src="core/system-tray.js"></script>
+  <script src="core/notifications.js"></script>
+  
+  <!-- Shared UI Components -->
+  <script src="components/window-chrome.js"></script>
+  <script src="components/start-menu.js"></script>
+  <script src="components/context-menu.js"></script>
+
+</body>
+</html>

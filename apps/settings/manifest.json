@@ -1,0 +1,12 @@
+{
+  "id": "settings",
+  "name": "Settings",
+  "icon": "⚙️",
+  "entry": "apps/settings/app.js",
+  "styles": "apps/settings/app.css",
+  "defaultSize": { "width": 580, "height": 420 },
+  "minSize": { "width": 400, "height": 300 },
+  "singleton": true,
+  "pinned": true,
+  "desktopShortcut": true
+}

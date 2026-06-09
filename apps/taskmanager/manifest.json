@@ -1,0 +1,12 @@
+{
+  "id": "taskmanager",
+  "name": "Task Manager",
+  "icon": "📊",
+  "entry": "apps/taskmanager/app.js",
+  "styles": "apps/taskmanager/app.css",
+  "defaultSize": { "width": 600, "height": 450 },
+  "minSize": { "width": 450, "height": 300 },
+  "singleton": true,
+  "pinned": true,
+  "desktopShortcut": true
+}
